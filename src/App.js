@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+/* import logo from "./logo.svg"; */
+import "./App.css";
+/* import Greeeting from "./components/pure/greeeting";
+import FGreeting from "./components/pure/fGreeting"; */
+import Contacto from "./components/pure/Contacto";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ padding: 20 }}>
+      <Contacto
+        nombre="Sebas"
+        apellido="Poma"
+        email="sebas.srrr@gmail.com"
+        conectado={false}
+      ></Contacto>
     </div>
   );
 }
