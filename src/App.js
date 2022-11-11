@@ -11,6 +11,8 @@ import Ejemplo4 from "./hooks/Ejemplo4";
 import TaskListComponent from "./components/container/task_list";
 import GreetingStyled from "./components/pure/greetingStyled";
 import Clock from "./components/pure/Clock";
+import Father from "./components/container/father";
+import ContactList from "./components/container/contact_list";
 
 function App() {
   return (
@@ -21,7 +23,10 @@ function App() {
       {/* <Ejemplo4 nombre="Sebas">Este es un ejemplo del props</Ejemplo4> */}
       {/* <TaskListComponent></TaskListComponent> */}
       {/* <GreetingStyled name="Sebas"></GreetingStyled> */}
-      <Clock></Clock>
+      {/* <Clock></Clock> */}
+      <ContactList></ContactList>
+      {/* Gestion de eventos */}
+      {/* <Father></Father> */}
     </div>
   );
 }
