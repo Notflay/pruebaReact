@@ -13,6 +13,8 @@ import GreetingStyled from "./components/pure/greetingStyled";
 import Clock from "./components/pure/Clock";
 import Father from "./components/container/father";
 import ContactList from "./components/container/contact_list";
+import OptionalRender from "./components/pure/optionalRender";
+import Componente from "./components/pure/componente";
 
 function App() {
   return (
@@ -24,9 +26,12 @@ function App() {
       {/* <TaskListComponent></TaskListComponent> */}
       {/* <GreetingStyled name="Sebas"></GreetingStyled> */}
       {/* <Clock></Clock> */}
-      <ContactList></ContactList>
+      {/* <ContactList></ContactList> */}
       {/* Gestion de eventos */}
       {/* <Father></Father> */}
+      {/* <OptionalRender></OptionalRender> */}
+      {/* Ejemplo de renderizado condicional */}
+      <Componente></Componente>
     </div>
   );
 }
