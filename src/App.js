@@ -15,6 +15,9 @@ import Father from "./components/container/father";
 import ContactList from "./components/container/contact_list";
 import OptionalRender from "./components/pure/optionalRender";
 import Componente from "./components/pure/componente";
+import LoginFormik from "./components/pure/form/loginFormik";
+import RegisterFormik from "./components/pure/form/registerFormik";
+import TaskFormik from "./components/pure/form/taskFormik";
 
 function App() {
   return (
@@ -31,7 +34,12 @@ function App() {
       {/* <Father></Father> */}
       {/* <OptionalRender></OptionalRender> */}
       {/* Ejemplo de renderizado condicional */}
-      <Componente></Componente>
+      {/* <Componente></Componente> */}
+
+      {/* <LoginFormik></LoginFormik> */}
+
+      {/* <RegisterFormik></RegisterFormik> */}
+      <TaskFormik></TaskFormik>
     </div>
   );
 }
