@@ -39,7 +39,7 @@ function App() {
       {/* <LoginFormik></LoginFormik> */}
 
       {/* <RegisterFormik></RegisterFormik> */}
-      <TaskFormik></TaskFormik>
+      {/* <TaskFormik></TaskFormik> */}
     </div>
   );
 }

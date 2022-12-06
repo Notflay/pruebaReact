@@ -1,6 +1,7 @@
 import React from "react";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const loginSchema = Yup.object().shape({
   email: Yup.string()
@@ -15,6 +16,12 @@ const LoginFormik = () => {
     password: "",
   };
 
+  const navigate = useNavigate();
+
+  if (localStorage.getItem("credentials") != null) {
+    return <Navigate to="/dashboard" />;
+  }
+
   return (
     <div>
       <h4>Login Formik</h4>
@@ -27,7 +34,8 @@ const LoginFormik = () => {
         onSubmit={async (values) => {
           await new Promise((r) => setTimeout(r, 1000));
           alert(JSON.stringify(values, null, 2));
-          localStorage.setItem("credentials", values);
+          await localStorage.setItem("credentials", values);
+          window.location.reload();
         }}
       >
         {/* We obtain props from Formik */}
