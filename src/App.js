@@ -18,6 +18,11 @@ import Componente from "./components/pure/componente";
 import LoginFormik from "./components/pure/form/loginFormik";
 import RegisterFormik from "./components/pure/form/registerFormik";
 import TaskFormik from "./components/pure/form/taskFormik";
+import AsyncExample from "./components/pure/AsyncExample";
+import ObservableExample from "./components/pure/ObservableExample";
+import FetchExample from "./components/pure/fetchExample";
+import AxiosExample from "./components/container/axiosExample";
+import ChistesAleatorios from "./components/container/chistesAleatorios";
 
 function App() {
   return (
@@ -40,6 +45,11 @@ function App() {
 
       {/* <RegisterFormik></RegisterFormik> */}
       {/* <TaskFormik></TaskFormik> */}
+
+      {/* <AsyncExample></AsyncExample> */}
+      {/* <ObservableExample></ObservableExample> */}
+      {/* <FetchExample></FetchExample> */}
+      <ChistesAleatorios></ChistesAleatorios>
     </div>
   );
 }
